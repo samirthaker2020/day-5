@@ -67,8 +67,8 @@ var country=[String]()
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if(component==0)
-        {return self.lbl1.text=String("country:\(self.country[self.),State::\(self.state[row])")
-            
+        {
+            self.lbl1.text = "Country: \(self.country[self.piker1.selectedRow(inComponent: 0)]), City: \(self.state[self.piker1.selectedRow(inComponent: 1)])"
         }
         else{ return self.lbl1.text=String(self.state[row])}
     }
